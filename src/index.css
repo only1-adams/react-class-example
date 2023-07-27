@@ -1,0 +1,543 @@
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+}
+.loader-con {
+	width: 100%;
+	height: 100vh;
+	background: rgb(235, 228, 228);
+	transition: all 0.5s ease;
+	position: absolute;
+	z-index: 999999;
+	overflow-y: hidden !important;
+}
+.loader-con .loader {
+	width: 100px;
+	height: 100px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 15px solid white;
+	position: absolute;
+	margin: auto;
+	border-top-color: orangered;
+	border-radius: 50%;
+	animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+.samson {
+	margin-left: 3%;
+	cursor: pointer;
+}
+:root {
+	--bg: white;
+	--icon: black;
+	--text: black;
+}
+.dark {
+	--bg: black;
+	/* --icon: white; */
+	--text: white;
+	--card: black;
+}
+body {
+	background: var(--bg) !important;
+	color: var(--text) !important;
+	/* overflow: hidden; */
+	font-family: "Alkatra", cursive !important;
+}
+/* styling header  */
+.navbar {
+	background: var(--bg) !important;
+}
+.navbar-nav a {
+	color: var(--text);
+	font-weight: 600;
+}
+.navbar-nav a:hover {
+	color: orangered;
+}
+.wrapper {
+	position: relative;
+}
+.wrapper span {
+	position: absolute;
+	background-color: orangered;
+	right: -10px;
+	top: -2px;
+	font-size: 8px;
+	border-radius: 50%;
+	color: black;
+}
+.nav-link img {
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.search button {
+	background-color: orangered;
+	border: none;
+	color: black;
+	font-weight: 500;
+}
+.search button:hover {
+	background-color: black;
+	color: white;
+}
+/* styling header done */
+
+/* styling carousel  */
+.carousel-item img {
+	height: 80vh;
+}
+.carousel-control-prev i {
+	font-size: 50px;
+	color: orangered;
+}
+.carousel-control-next i {
+	font-size: 50px;
+	color: orangered;
+}
+.carousel-indicators .active {
+	background-color: orangered !important;
+}
+/* styling carousel done */
+
+/* styling content  */
+.fcat {
+	transition: 0.5s;
+}
+.fcat h5 {
+	background-color: orangered;
+}
+.fcat:hover {
+	transform: scale(1.2);
+}
+.card-img {
+	height: 40vh;
+}
+.title {
+	text-transform: capitalize;
+	text-align: center;
+}
+.title::after {
+	content: "";
+	display: block;
+	width: 180px;
+	height: 2px;
+	background-color: orangered;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fprod .card {
+	border: 1px solid orangered;
+	box-shadow: 5px 5px 20px 5px orange;
+	transition: 1s;
+	color: var(--card);
+	/* border-radius: 0%; */
+}
+.fprod .card:hover {
+	transform: translateY(-30px);
+}
+.fprod .card img {
+	height: 40vh;
+}
+.ship {
+	margin-top: 8%;
+	margin-bottom: 5%;
+}
+.ship i {
+	font-size: 40px;
+}
+/* styling content done */
+
+/* styling footer */
+.footer {
+	background-color: orangered;
+}
+.foota h4 {
+	text-transform: capitalize;
+	font-size: 20px;
+	color: black;
+}
+.foota ul a {
+	text-decoration: none;
+	color: white;
+}
+.foota p {
+	color: white;
+}
+.foota ul li {
+	color: white;
+	text-transform: capitalize;
+}
+.social i {
+	margin-left: 20px;
+	cursor: pointer;
+}
+.social i:hover {
+	color: black;
+}
+.footb p {
+	background-color: black;
+	color: white;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 0%;
+}
+/* styling footer done */
+
+/* styling product page  */
+.banner {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+		url(../img/carousel\ -\ 4.jpg);
+	height: 40vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.banner p {
+	margin-top: 15%;
+	font-weight: 500;
+	font-size: 20px;
+	margin-left: 5%;
+}
+.banner a {
+	text-decoration: none;
+	color: orangered;
+}
+.banner span {
+	color: white;
+}
+.product .card {
+	border: 1px solid orange;
+	border-radius: 10%;
+	box-shadow: 5px 5px 15px 5px orange;
+	transition: 1s;
+}
+.product .card:hover {
+	transform: translateY(-30px);
+}
+.product img {
+	padding: 5%;
+	height: 200px;
+	border-bottom: 2px solid orange;
+}
+.product .card-body {
+	text-align: center;
+}
+.product .btn {
+	background-color: orangered;
+	border: none;
+}
+.product .btn:hover {
+	background-color: black;
+}
+.pagination a {
+	color: orangered;
+	font-weight: 500;
+}
+.pagination a:hover {
+	background: black;
+	color: white;
+}
+/* styling product page done */
+
+/* styling detail page  */
+.fdet .card {
+	border: none;
+}
+.fdet .btn {
+	background-color: orangered;
+	color: black;
+	margin-top: 2%;
+}
+.fdet .btn:hover {
+	background-color: black;
+	color: white;
+}
+.fdet p {
+	color: black;
+}
+.fdetcat {
+	font-weight: 500;
+	padding-top: 2%;
+	font-style: italic;
+}
+/* styling detail page  */
+
+/* styling contact  */
+.fcont .btn {
+	background-color: orangered;
+	width: 100%;
+	color: white;
+	font-weight: 500;
+}
+.fcont .btn:hover {
+	background-color: orangered;
+}
+.map {
+	height: 53vh;
+}
+/* styling contact done */
+
+/* styling signup */
+.fsign form {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	border: 1px solid orangered;
+	padding: 3%;
+	box-shadow: 5px 5px 15px 5px orange;
+}
+.fsign form label {
+	color: black;
+	font-weight: 500;
+}
+.fsign form input:focus {
+	border: 1px solid orangered !important;
+	outline: none;
+}
+.fsign .btn {
+	background-color: orangered;
+	width: 100%;
+	color: white;
+	font-weight: 500;
+}
+.fsign .btn:hover {
+	background-color: orangered;
+	color: black;
+}
+.fsign p {
+	padding-top: 3%;
+	color: black;
+	font-weight: 500;
+}
+.fsign a {
+	text-decoration: none;
+	color: orangered;
+}
+.pass {
+	position: relative;
+}
+.see {
+	position: absolute;
+	top: 52%;
+	right: 20px;
+	cursor: pointer;
+}
+.see .bi-eye {
+	display: none;
+}
+.see.hide .bi-eye {
+	display: block;
+}
+.see.hide .bi-eye-slash {
+	display: none;
+}
+/* styling signup done */
+
+/* styling cart */
+.cart table {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 4%;
+	margin-bottom: 5%;
+	border: 1px solid orangered;
+	text-align: center;
+}
+.cart thead {
+	background-color: orangered;
+	text-transform: capitalize;
+	color: white;
+}
+.item td {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-weight: 500;
+	border: 1px solid orangered;
+}
+.cart .checkbtn a {
+	text-decoration: none;
+	color: white;
+}
+.item img {
+	transition: 1s;
+	cursor: pointer;
+}
+.item img:hover {
+	transform: scale(5);
+}
+.item i {
+	color: orangered;
+}
+.item button {
+	border: none;
+}
+.subtot td {
+	padding-top: 2%;
+	font-weight: 600;
+}
+/* styling cart done */
+
+/* styling checkout  */
+.total td {
+	font-size: 30px;
+	font-weight: 500;
+}
+.checkout label {
+	font-weight: 500;
+}
+.checkout .btn {
+	background-color: orangered;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	color: white;
+}
+.checkout .btn:hover {
+	background-color: black;
+	color: white;
+}
+.cart .btnback {
+	background-color: black;
+	margin-top: 20%;
+	margin-left: 10%;
+	width: 20%;
+}
+.cart .btnback:hover {
+	background-color: rgb(27, 22, 22);
+}
+.cart .btnback a {
+	text-decoration: none;
+	color: white;
+}
+/* styling checkout done */
+
+/* styling profile */
+.pavat {
+	text-align: center;
+	background-color: orange;
+	border-radius: 1rem;
+	height: 70vh;
+}
+.pavat img {
+	height: 150px;
+	border-radius: 100%;
+	padding-top: 10%;
+}
+.pavat p {
+	color: white;
+	font-style: italic;
+	text-transform: capitalize;
+	padding-top: 5%;
+}
+.pavat a {
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 20px;
+	color: black;
+}
+.pavat a:hover {
+	color: orangered;
+	font-weight: bolder;
+}
+.pdet table {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	border: 2px solid orangered;
+	margin-top: 5%;
+	height: 50vh;
+	text-align: center;
+}
+.pdet table td {
+	border: 1px solid orangered;
+}
+.left {
+	font-weight: 600;
+}
+.pupdate form {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	border: 2px dashed orangered;
+	padding: 3%;
+}
+.pupdate form label {
+	font-weight: 600;
+}
+.pupdate .btn {
+	background-color: orangered;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	color: white;
+	font-weight: 500;
+}
+.pupdate .btn:hover {
+	background-color: black;
+	color: white;
+}
+.thank {
+	text-align: center;
+	/* margin-top: 10% !important; */
+	width: 50% !important;
+	margin-left: 15%;
+}
+.thank img {
+	height: 200px;
+}
+.thank p {
+	font-size: 20px;
+}
+.thank span {
+	text-transform: capitalize;
+	color: orangered;
+	font-weight: 500;
+}
+.thank button {
+	background-color: orangered;
+}
+.thank button:hover {
+	background-color: black;
+}
+.thank a {
+	text-decoration: none;
+	color: white;
+}
+/* styling profile done */
+
+@media (min-width: 320px) and (max-width: 768px) {
+	.carousel-item img {
+		height: 40vh;
+	}
+	.carousel-control-prev i {
+		font-size: 30px;
+		color: orangered;
+	}
+	.carousel-control-next i {
+		font-size: 30px;
+		color: orangered;
+	}
+	.wrapper {
+		position: relative;
+	}
+	.wrapper span {
+		position: absolute;
+		background-color: orangered;
+		right: 90%;
+		top: -2px;
+		font-size: 8px;
+		border-radius: 50%;
+		color: black;
+	}
+}
